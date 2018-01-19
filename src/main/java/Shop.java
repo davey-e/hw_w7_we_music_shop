@@ -21,4 +21,18 @@ public class Shop {
     public void addItem(Item item) {
         this.items.add(item);
     }
+
+    public void removeItem(Item item) {
+        this.items.remove(item);
+    }
+
+    public boolean itemExists(Item item) {
+        boolean itemFound = false;
+        for(int i =0; i < this.getNumberOfItems(); i++){
+            if (this.items.get(i) == item){
+                itemFound = true;
+            }
+        }
+        return itemFound;
+    }
 }
