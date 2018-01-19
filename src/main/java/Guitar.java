@@ -1,11 +1,12 @@
-public class Guitar implements IPlayable{
+public class Guitar extends Instrument implements IPlayable{
 
     private int numberOfStrings;
     private String guitarType;
 
-    public Guitar(int numberOfStrings, String type){
+    public Guitar(String instrumentType, String material, String colour, int numberOfStrings, String guitarType){
+        super(instrumentType, material, colour);
         this.numberOfStrings = numberOfStrings;
-        this.guitarType = type;
+        this.guitarType = guitarType;
     }
 
     public int getNumberOfStrings() {
