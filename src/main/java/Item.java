@@ -1,4 +1,4 @@
-public class Item {
+public class Item implements ISellable{
 
     private double buyPrice;
     private double sellPrice;
@@ -14,5 +14,9 @@ public class Item {
 
     public double getSellPrice() {
         return this.sellPrice;
+    }
+
+    public double calculateMarkup() {
+        return this.sellPrice - this.buyPrice;
     }
 }

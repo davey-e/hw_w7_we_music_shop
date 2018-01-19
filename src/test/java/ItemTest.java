@@ -21,4 +21,9 @@ public class ItemTest {
     public void hasSellPrice(){
         assertEquals(150.00, item.getSellPrice(), 0.01);
     }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(50.00, item.calculateMarkup(),0.01);
+    }
 }
