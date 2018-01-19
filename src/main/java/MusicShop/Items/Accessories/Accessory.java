@@ -1,4 +1,8 @@
-public class Accessory extends Item{
+package MusicShop.Items.Accessories;
+
+import MusicShop.Items.Item;
+
+public class Accessory extends Item {
 
     private String accessoryType;
     private String description;

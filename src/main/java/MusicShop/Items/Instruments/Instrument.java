@@ -1,4 +1,8 @@
-public abstract class Instrument extends Item{
+package MusicShop.Items.Instruments;
+
+import MusicShop.Items.Item;
+
+public abstract class Instrument extends Item {
 
     private String instrumentType;
     private String material;

@@ -1,3 +1,6 @@
+import MusicShop.Items.Accessories.Accessory;
+import MusicShop.Items.Instruments.Guitar;
+import MusicShop.Shop;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,10 +18,10 @@ public class ShopTest {
     @Before
     public void before(){
         shop = new Shop("Ray's Music Exchange");
-        accessory1 = new Accessory(10.00, 15.00, "Guitar Strings", "Set of 5 bass guitar strings");
-        accessory2 = new Accessory(5.00, 10.00, "Sheet Music", "Suzuki Piano Book 1");
-        guitar1 = new Guitar(100.00, 150.00, "Guitar", "Wood", "Red", 5, "Bass");
-        guitar2 = new Guitar(120.00, 160.00, "Guitar", "Wood", "Blue", 6, "Electric");
+        accessory1 = new Accessory(10.00, 15.00, "MusicShop.Items.Instruments.Guitar Strings", "Set of 5 bass guitar strings");
+        accessory2 = new Accessory(5.00, 10.00, "Sheet Music", "Suzuki MusicShop.Items.Instruments.Piano Book 1");
+        guitar1 = new Guitar(100.00, 150.00, "MusicShop.Items.Instruments.Guitar", "Wood", "Red", 5, "Bass");
+        guitar2 = new Guitar(120.00, 160.00, "MusicShop.Items.Instruments.Guitar", "Wood", "Blue", 6, "Electric");
     }
 
     @Test

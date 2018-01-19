@@ -1,3 +1,4 @@
+import MusicShop.Items.Accessories.Accessory;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,12 +10,12 @@ public class AccessoryTest {
 
     @Before
     public void before(){
-        accessory = new Accessory(10.00, 15.00,"Guitar Strings", "Set of 5 bass guitar strings");
+        accessory = new Accessory(10.00, 15.00,"MusicShop.Items.Instruments.Guitar Strings", "Set of 5 bass guitar strings");
     }
 
     @Test
     public void hasAccessoryType(){
-        assertEquals("Guitar Strings", accessory.getAccessoryType());
+        assertEquals("MusicShop.Items.Instruments.Guitar Strings", accessory.getAccessoryType());
     }
 
     @Test

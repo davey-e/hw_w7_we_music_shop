@@ -1,4 +1,8 @@
-public abstract class Item implements ISellable{
+package MusicShop.Items;
+
+import MusicShop.Behaviours.ISellable;
+
+public abstract class Item implements ISellable {
 
     private double buyPrice;
     private double sellPrice;

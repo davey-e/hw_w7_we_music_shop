@@ -1,4 +1,8 @@
-public class Guitar extends Instrument implements IPlayable{
+package MusicShop.Items.Instruments;
+
+import MusicShop.Behaviours.IPlayable;
+
+public class Guitar extends Instrument implements IPlayable {
 
     private int numberOfStrings;
     private String guitarType;

@@ -1,3 +1,4 @@
+import MusicShop.Items.Instruments.Guitar;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,12 +10,12 @@ public class InstrumentTest {
 
     @Before
     public void before(){
-        guitar = new Guitar(100.00, 150.00,"Guitar", "Wood", "Red", 5, "Bass");
+        guitar = new Guitar(100.00, 150.00,"MusicShop.Items.Instruments.Guitar", "Wood", "Red", 5, "Bass");
     }
 
     @Test
     public void hasInstrumentType(){
-        assertEquals("Guitar", guitar.getInstrumentType());
+        assertEquals("MusicShop.Items.Instruments.Guitar", guitar.getInstrumentType());
     }
 
     @Test

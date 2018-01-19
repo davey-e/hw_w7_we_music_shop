@@ -1,3 +1,8 @@
+package MusicShop;
+
+import MusicShop.Behaviours.ISellable;
+import MusicShop.Items.Item;
+
 import java.util.ArrayList;
 
 public class Shop {

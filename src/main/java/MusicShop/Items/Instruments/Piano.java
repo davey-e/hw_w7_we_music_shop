@@ -1,4 +1,8 @@
-public class Piano extends Instrument implements IPlayable{
+package MusicShop.Items.Instruments;
+
+import MusicShop.Behaviours.IPlayable;
+
+public class Piano extends Instrument implements IPlayable {
 
     private int numberOfKeys;
     private String pianoType;
