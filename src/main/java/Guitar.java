@@ -9,11 +9,11 @@ public class Guitar implements IPlayable{
     }
 
     public int getNumberOfStrings() {
-        return numberOfStrings;
+        return this.numberOfStrings;
     }
 
     public String getGuitarType() {
-        return guitarType;
+        return this.guitarType;
     }
 
     public String play() {
