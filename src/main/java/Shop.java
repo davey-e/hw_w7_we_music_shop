@@ -17,4 +17,8 @@ public class Shop {
     public int getNumberOfItems() {
         return this.items.size();
     }
+
+    public void addItem(Item item) {
+        this.items.add(item);
+    }
 }
