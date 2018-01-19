@@ -1,9 +1,10 @@
-public class Accessory {
+public class Accessory extends Item{
 
     private String accessoryType;
     private String description;
 
-    public Accessory(String accessoryType, String description){
+    public Accessory(double buyPrice, double sellPrice, String accessoryType, String description){
+        super(buyPrice, sellPrice);
         this.accessoryType = accessoryType;
         this.description = description;
     }
