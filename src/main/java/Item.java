@@ -1,4 +1,4 @@
-public class Item implements ISellable{
+public abstract class Item implements ISellable{
 
     private double buyPrice;
     private double sellPrice;
