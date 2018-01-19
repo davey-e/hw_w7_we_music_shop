@@ -1,4 +1,4 @@
-public class Instrument {
+public abstract class Instrument {
 
     private String instrumentType;
     private String material;

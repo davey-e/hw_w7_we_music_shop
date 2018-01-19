@@ -5,25 +5,25 @@ import static org.junit.Assert.assertEquals;
 
 public class InstrumentTest {
 
-    Instrument instrument;
+    Guitar guitar;
 
     @Before
     public void before(){
-        instrument = new Instrument("Guitar", "Wood", "Red");
+        guitar = new Guitar("Guitar", "Wood", "Red", 5, "Bass");
     }
 
     @Test
     public void hasInstrumentType(){
-        assertEquals("Guitar", instrument.getInstrumentType());
+        assertEquals("Guitar", guitar.getInstrumentType());
     }
 
     @Test
     public void hasMaterial(){
-        assertEquals("Wood", instrument.getMaterial());
+        assertEquals("Wood", guitar.getMaterial());
     }
 
     @Test
     public void hasColour(){
-        assertEquals("Red", instrument.getColour());
+        assertEquals("Red", guitar.getColour());
     }
 }
