@@ -21,4 +21,9 @@ public class PianoTest {
     public void hasPianoType(){
         assertEquals("Upright", piano.getPianoType());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Tickling the ivories", piano.play());
+    }
 }

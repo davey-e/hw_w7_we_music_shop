@@ -1,4 +1,4 @@
-public class Piano {
+public class Piano implements IPlayable{
 
     private int numberOfKeys;
     private String pianoType;
@@ -14,5 +14,9 @@ public class Piano {
 
     public String getPianoType() {
         return this.pianoType;
+    }
+
+    public String play() {
+        return "Tickling the ivories";
     }
 }
