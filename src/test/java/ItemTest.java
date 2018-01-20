@@ -10,7 +10,7 @@ public class ItemTest {
 
     @Before
     public void before(){
-        accessory = new Accessory(100.00, 150.00, "MusicShop.Items.Instruments.Guitar Strings", "Set of 5 bass guitar strings");
+        accessory = new Accessory(100.00, 150.00, "Guitar Strings", "Set of 5 bass guitar strings");
     }
 
     @Test

@@ -40,4 +40,12 @@ public class Shop {
         }
         return itemFound;
     }
+
+    public double calculateTotalPotentialProfit() {
+        double totalProfit = 0;
+        for (int i = 0; i < this.getNumberOfItems(); i++){
+            totalProfit += items.get(i).calculateMarkup();
+        }
+        return totalProfit;
+    }
 }

@@ -1,3 +1,4 @@
+import MusicShop.Enums.InstrumentType;
 import MusicShop.Items.Accessories.Accessory;
 import MusicShop.Items.Instruments.Guitar;
 import MusicShop.Shop;
@@ -18,10 +19,10 @@ public class ShopTest {
     @Before
     public void before(){
         shop = new Shop("Ray's Music Exchange");
-        accessory1 = new Accessory(10.00, 15.00, "MusicShop.Items.Instruments.Guitar Strings", "Set of 5 bass guitar strings");
-        accessory2 = new Accessory(5.00, 10.00, "Sheet Music", "Suzuki MusicShop.Items.Instruments.Piano Book 1");
-        guitar1 = new Guitar(100.00, 150.00, "MusicShop.Items.Instruments.Guitar", "Wood", "Red", 5, "Bass");
-        guitar2 = new Guitar(120.00, 160.00, "MusicShop.Items.Instruments.Guitar", "Wood", "Blue", 6, "Electric");
+        accessory1 = new Accessory(10.00, 15.00, "Guitar Strings", "Set of 5 bass guitar strings");
+        accessory2 = new Accessory(5.00, 10.00, "Sheet Music", "Suzuki Piano Book 1");
+        guitar1 = new Guitar(100.00, 150.00, InstrumentType.GUITAR, "Wood", "Red", 5, "Bass");
+        guitar2 = new Guitar(120.00, 160.00, InstrumentType.GUITAR, "Wood", "Blue", 6, "Electric");
     }
 
     @Test
@@ -62,6 +63,15 @@ public class ShopTest {
         shop.removeItem(guitar1);
         assertEquals(1, shop.getNumberOfItems());
         assertTrue(shop.itemExists(guitar2));
+    }
+
+    @Test
+    public void canCalculateTotalPotentialProfit(){
+        shop.addItem(accessory1);
+        shop.addItem(accessory2);
+        shop.addItem(guitar1);
+        shop.addItem(guitar2);
+        assertEquals(100.00, shop.calculateTotalPotentialProfit(), 0.01);
     }
 
 }

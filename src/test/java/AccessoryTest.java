@@ -10,12 +10,12 @@ public class AccessoryTest {
 
     @Before
     public void before(){
-        accessory = new Accessory(10.00, 15.00,"MusicShop.Items.Instruments.Guitar Strings", "Set of 5 bass guitar strings");
+        accessory = new Accessory(10.00, 15.00,"Guitar Strings", "Set of 5 bass guitar strings");
     }
 
     @Test
     public void hasAccessoryType(){
-        assertEquals("MusicShop.Items.Instruments.Guitar Strings", accessory.getAccessoryType());
+        assertEquals("Guitar Strings", accessory.getAccessoryType());
     }
 
     @Test

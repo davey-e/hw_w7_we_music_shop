@@ -1,3 +1,4 @@
+import MusicShop.Enums.InstrumentType;
 import MusicShop.Items.Instruments.Guitar;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar(100.00, 150.00,"MusicShop.Items.Instruments.Guitar", "Wood", "Red", 5, "Bass");
+        guitar = new Guitar(100.00, 150.00, InstrumentType.GUITAR, "Wood", "Red", 5, "Bass");
     }
 
     @Test
