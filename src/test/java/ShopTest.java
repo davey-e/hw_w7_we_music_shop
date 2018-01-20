@@ -1,3 +1,4 @@
+import MusicShop.Enums.GuitarType;
 import MusicShop.Enums.InstrumentType;
 import MusicShop.Items.Accessories.Accessory;
 import MusicShop.Items.Instruments.Guitar;
@@ -21,8 +22,8 @@ public class ShopTest {
         shop = new Shop("Ray's Music Exchange");
         accessory1 = new Accessory(10.00, 15.00, "Guitar Strings", "Set of 5 bass guitar strings");
         accessory2 = new Accessory(5.00, 10.00, "Sheet Music", "Suzuki Piano Book 1");
-        guitar1 = new Guitar(100.00, 150.00, InstrumentType.GUITAR, "Wood", "Red", 5, "Bass");
-        guitar2 = new Guitar(120.00, 160.00, InstrumentType.GUITAR, "Wood", "Blue", 6, "Electric");
+        guitar1 = new Guitar(100.00, 150.00, InstrumentType.GUITAR, "Wood", "Red", 5, GuitarType.BASS);
+        guitar2 = new Guitar(120.00, 160.00, InstrumentType.GUITAR, "Wood", "Blue", 6, GuitarType.ELECTRIC);
     }
 
     @Test
